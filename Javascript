@@ -1,0 +1,14 @@
+// Selecting the bio section
+const bioSection = document.querySelector('.bio');
+
+// Adding click event to the bio section
+bioSection.addEventListener('click', () => {
+    // Adding the shake class to trigger the animation
+    bioSection.classList.add('shake');
+
+    // Removing the shake class after the animation completes (0.5s)
+    setTimeout(() => {
+        bioSection.classList.remove('shake');
+    }, 500); // Time matches the animation duration
+});
+

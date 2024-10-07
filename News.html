@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus News</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #004080; 
+      color: white;
+      padding: 20px;
+      text-align: center;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.logos {
+  display: flex;
+  margin-right: 20px; 
+}
+
+.logo{
+  width: 200px; 
+  height: 100px; 
+
+}
+
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffdd57;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #034f84;
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+
+    article {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    article:hover {
+      transform: scale(1.02); 
+    }
+
+    .news-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .news-box img {
+      margin: 10px;
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .news-box img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .news-content {
+      max-width: 600px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    article h3 {
+      color: #034f84;
+      font-size: 1.8em;
+      margin-top: 20px;
+    }
+
+    article p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .shake-on-click:active {
+      animation: shake 0.3s ease;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+    footer {
+      background-color: #022a4d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .news-box {
+        flex-direction: column;
+      }
+
+      .news-box img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logos">
+        <img src="Navgurukul logo .png" alt="NavGurukul Logo" class="logo">
+        <img src="Project potential logo.png" alt="Project Potential Logo" class="logo">
+      </div>
+      <h1>🎓Welcome to our Campus✨</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="council.html">👥 Council</a></li>
+        <li><a href="gallery.html">📸 Gallery</a></li>
+        <li><a href="news.html">📰 News</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2>Latest Updates</h2>
+    <article>
+      <h3>🏆Reward Ceremony🏆</h3>
+      <div class="news-box">
+        <img src="Reward.jpg" alt="Reward1" class="shake-on-click">
+        <img src="Reward1.jpg" alt="Reward2" class="shake-on-click">
+        <div class="news-content">
+          <p>We celebrate our effort-based Reward Ceremony on the 13th of every month....🏆🥳🌟</p>
+        </div>
+      </div>
+    </article>
+    
+    <article>
+      <h3>English Hackathon</h3>
+      <div class="news-box">
+        <img src="English.jpg" alt="English" class="shake-on-click">
+        <img src="English1.jpg" alt="English1" class="shake-on-click">
+        <div class="news-content">
+          <p>The English Hackathon is happening on 9th October, aimed at improving English learning.🎤🎉💻</p>
+        </div>
+      </div>
+    </article>
+    
+    <article>
+      <h3>Garba Night</h3>
+      <div class="news-box">
+        <img src="Garba.jpg" alt="Garba" class="shake-on-click">
+        <img src="Garba1.jpg" alt="Garba1" class="shake-on-click">
+        <div class="news-content">
+          <p>We will celebrate Garba on 10th October. Come join the fun and dance!💗💫</p>
+        </div>
+      </div>
+    </article>
+    
+    <article>
+      <h3>Council Incentive Celebration</h3>
+      <div class="news-box">
+        <img src="Council.jpg" alt="Council" class="shake-on-click">
+        <img src="Council1.jpg" alt="Council1" class="shake-on-click">
+        <div class="news-content">
+          <p>The Council Incentive Celebration is scheduled for 15th October.🎊✨</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2024 School of Programming Campus 🌟</p>
+  </footer>
+</body>
+</html>
+
+
+
